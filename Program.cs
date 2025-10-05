@@ -1,13 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Введите конечное число");
-double n = Convert.ToDouble(Console.ReadLine());
+﻿Console.WriteLine("Введите конечное число");
+double n = Convert.ToInt32(Console.ReadLine());
 double g = 0;
-double i = 1;
-while (i <= n)
+for (int i = 1; i <= n; i++)
 {
-    g = i * 10 + 1;
-    i++;
-    
+    g = i*10+1;
     Console.WriteLine(g);
 
-} 
+}
+
